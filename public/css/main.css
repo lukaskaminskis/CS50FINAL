@@ -1,0 +1,46 @@
+body, button, input, select, textarea {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: medium;
+  color: #3F84C5; }
+  body .navbar-item, button .navbar-item, input .navbar-item, select .navbar-item, textarea .navbar-item {
+    font-family: "Lato", sans-serif; }
+    body .navbar-item img, button .navbar-item img, input .navbar-item img, select .navbar-item img, textarea .navbar-item img {
+      max-height: 3rem; }
+  body p, button p, input p, select p, textarea p {
+    font-family: "Lato", sans-serif; }
+
+.subtitle {
+  font-family: "Fira Sans", sans-serif; }
+
+.content h3 {
+  color: #4BBCCE; }
+
+.content h4, .content h5 {
+  color: #3F84C5; }
+
+.hero-body {
+  color: #3F84C5; }
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: #3F84C5;
+  background-size: cover; }
+
+header img {
+  width: 35%;
+  margin: 0 auto;
+  position: absolute;
+  top: 11rem;
+  left: 50rem; }
+
+header h1 {
+  position: absolute;
+  top: 15rem;
+  left: 5rem;
+  font-size: 3rem;
+  color: #fff;
+  width: 500px; }
+
+.footer .column h {
+  max-width: 500px; }

@@ -1,0 +1,43 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Website for TSOLUTIONS",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss public/scss/main.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start": "node index.js",
+    "test": "jest --coverage --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Lukas Kaminskis",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bulma": "^0.6.1",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "jsdom": "^11.4.0",
+    "jsonify": "0.0.0",
+    "medium-sdk": "0.0.4",
+    "node-sass": "^4.7.1",
+    "pg": "^7.4.0",
+    "request-to-curl": "^0.1.1",
+    "server": "^1.0.12",
+    "underscore": "^1.8.3",
+    "universal-analytics": "^0.4.15"
+  },
+  "devDependencies": {
+    "minimatch": "^3.0.4"
+  },
+  "keywords": [
+    "web"
+  ]
+}

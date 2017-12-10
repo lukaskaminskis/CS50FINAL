@@ -1,0 +1,69 @@
+$ffont: 'Fira Sans', sans-serif;
+$lfont: 'Lato', sans-serif;
+
+$light-blue: #4BBCCE;
+$dark-blue: #3F84C5;
+$white: #fff;
+
+body, button, input, select, textarea {
+  font-family: $ffont;
+  font-weight: medium;
+  color: $dark-blue;
+
+  .navbar-item{
+    font-family: $lfont;
+      img{
+      max-height: 3rem;
+      }
+  }
+  p{
+    font-family: $lfont;
+  }
+
+}
+.subtitle {
+  font-family: $ffont;
+}
+.content{
+  h3{
+    color: $light-blue;
+  }
+  h4, h5{
+    color: $dark-blue;
+  }
+}
+.hero-body{
+  color: $dark-blue;
+}
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #3F84C5;
+  background-size: cover;
+}
+header {
+  img{
+    width: 35%;
+    margin:0 auto;
+    position: absolute;
+    top: 11rem;
+    left: 50rem;
+  }
+  h1 {
+    position: absolute;
+    top:15rem;
+    left:5rem;
+    font-size: 3rem;
+    color: $white;
+    width: 500px;
+  }
+
+}
+
+.footer {
+  .column {
+    h {
+    max-width: 500px;
+    }
+  }
+}
