@@ -1,3 +1,5 @@
+// @import "../bulma";
+
 $ffont: 'Fira Sans', sans-serif;
 $lfont: 'Lato', sans-serif;
 
@@ -5,13 +7,23 @@ $light-blue: #4BBCCE;
 $dark-blue: #3F84C5;
 $white: #fff;
 
+.container{
+  max-width: 1152px;
+  margin-right: auto;
+  margin-left: auto;
+}
+html,
+body {
+   width: 100%;
+ }
 body, button, input, select, textarea {
   font-family: $ffont;
-  font-weight: medium;
   color: $dark-blue;
 
   .navbar-item{
     font-family: $lfont;
+    font-weight: 600;
+    color:$light-blue;
       img{
       max-height: 3rem;
       }
@@ -19,7 +31,6 @@ body, button, input, select, textarea {
   p{
     font-family: $lfont;
   }
-
 }
 .subtitle {
   font-family: $ffont;
@@ -42,7 +53,7 @@ body, button, input, select, textarea {
   background-size: cover;
 }
 header {
-  img{
+   #wind{
     width: 35%;
     margin:0 auto;
     position: absolute;
@@ -57,13 +68,322 @@ header {
     color: $white;
     width: 500px;
   }
+}
+//About_us
+.aboutus {
+  .container{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+  h4 {
+    margin: 0 auto;
+    max-width: 200px;
+    color: #4BBCCE;
+    #right {
+      padding-right: 2rem;
+    }
+  }
+
+  #column1{
+    background-color: #4BBCCE;
+    width: 480px;
+    height: 272px;
+    padding-top: 2rem;
+  }
+  #aboutus{
+   .content{
+     max-width:400px;
+     margin:0 auto;
+     h2{
+       padding-top: 1rem;
+     }
+   }
+   .column{
+     margin: 0 auto;
+   }
+  }
+  #radistai{
+    padding-top: 2rem;
+  }
+}
+.vertical{
+  height: 7rem;
+  vertical-align: middle;
+}
+/*CLIENTS*/
+.info-field{
+  visibility: hidden;
+  opacity: 0;
+}
+#draggable:hover .info-field{
+  visibility: visible;
+  opacity: 1;
+}
+/*Projects*/
+.allprojects{
+    background-color: #F9FCFF;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    .container{
+      padding: 3rem 0 3rem 0;
+    }
+
+    h5{
+      padding-bottom: 10px;
+      margin-top: 125px;
+      border-bottom: 2.5px solid #3F84C5;
+      font-weight: normal;
+    }
+    img{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      object-fit: cover;
+    }
+    .button-wraper{
+      margin-top: 125px;
+    }
+    .column{
+      max-width: 350px;
+    }
+    /*Project-right*/
+    #righttext{
+      margin-left: 50px;
+      font-weight: normal;
+    }
+    #rightpadding{
+      padding-right: 50px;
+    }
+    /*Project-left*/
+    #lefttext{
+      margin-right: 50px;
+    }
+    #leftpadding{
+      padding-left: 50px;
+    }
+}
+/*button*/
+.button-wraper {
+            display: inline-block;
+            position: relative;
+
+        .styled-button {
+            background: transparent;
+            border: 2.5px solid #3F84C5;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            padding: 10px 30px;
+            color: #4BBCCE;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            cursor: pointer;
+            outline: none;
+            z-index: 10;
+            transition: .5s ease;
+        }
+        .styled-button:after {
+            content: '';
+            width: 95%;
+            height: 82%;
+            background: transparent;
+            border: 2.5px solid #3F84C5;
+            top: 20px;
+            left: 15px;
+            position: absolute;
+            display: block;
+            z-index: 1;
+            transition: .5s ease;
+        }
+        .styled-button:hover {
+            background: #fff;
+            color: #122A40;
+
+        }
+
+        .styled-button:hover:after {
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+      }
+/*SERVICES*/
+.services .content{
+  padding-top: 2.6rem;
+}
+/*STATS*/
+.stats {
+  background-color: #F9FCFF;
+  margin: 5rem 0 5rem 0;
+  padding: 2rem 0 2rem 0;
+}
+/*TEAM*/
+.team {
+  .columns{
+      padding-top: 2.6rem;
+      p{
+        color: #5C7295;
+        font-size: 0.9rem;
+      }
+      .title{
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+    }
+    .column h3,h4,p{
+      width: 300px;
+    }
+    #team {
+      padding: 2.6rem 0 2.6rem 0;
+    }
+    .container img{
+      border-radius:3px;
+      object-fit: cover;
+    }
+    article {
+      margin-bottom: 30px;
+    }
+  }
+// Images
+.instaphotos{
+  .content{
+    margin-top: 2rem;
+  }
+  #photos {
+  	display: flex;
+  	flex-wrap: wrap;
+  	max-width: 100%;
+    img {
+    	height: 256px;
+    	margin: 25px 50px;
+    }
+  }
 
 }
 
-.footer {
-  .column {
-    h {
-    max-width: 500px;
+/* Footer */
+.footer{
+  background-color: #122A40;
+
+  h1{
+    color: white;
+    border-bottom: 2.5px solid #fff;
+    padding-bottom: 10px;
+  }
+  .column h4 {
+      max-width: 500px;
+  }
+  .column a{
+    color: #3F84C5;
+  }
+  a:hover{
+    color: #fff;
+  }
+  #contacts {
+    padding-left: 2rem;
+  }
+  #colors{
+    color: white;
+  }
+}
+/*MOBILE*/
+@media screen and (max-width: 1407px)
+{
+  header #wind{
+  left: 60%;
+  top:11rem;
+  }
+}
+@media screen and (max-width: 1152px)
+{
+  header {
+    #title_main{
+      top:7rem;
     }
+    #wind{
+    left: 60%;
+    top:9rem;
+    size:35%;
+    }
+  }
+  }
+  @media screen and (max-width: 768px)
+  {
+    header{
+      #title_main{
+        top:2rem;
+        left:1rem;
+        font-size: 1.5rem;
+        width: 400px;
+
+      }
+      #centerleft{
+        margin-left: 220px;
+      }
+      #particles-js{
+        height: 500px;
+      }
+      #wind{
+      width:20%;
+      top: 8rem;
+      left:40%;
+      }
+      .image img{
+        width: 50%;
+      }
+    }
+  #rightpadding{
+    padding: 0;
+  }
+  .services{
+    text-align: center;
+  }
+  .aboutus{
+    text-align: center;
+    .vertical{
+      padding-right: 15%;
+    }
+    #column1{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .allprojects {
+    .column{
+      max-width: 100%;
+      text-align: center;
+      has-text-right{
+        text-align: center;
+      }
+    }
+    image{
+      width: 300px;
+      height: 300px;
+      margin-left:50px;
+    }
+    #rightpadding{
+      padding: 0;
+    }
+
+  }
+  .team{
+    padding: 0 15px;
+    margin-left: 2rem;
+    .column h4,h3,p {
+      width: 100%;
+    }
+    p{
+      font-size: 12px;
+    }
+    .title, .subtitle{
+      font-size: 14.4px;
+    }
+
   }
 }

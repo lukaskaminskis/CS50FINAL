@@ -1,9 +1,19 @@
+.container {
+  max-width: 1152px;
+  margin-right: auto;
+  margin-left: auto; }
+
+html,
+body {
+  width: 100%; }
+
 body, button, input, select, textarea {
   font-family: "Fira Sans", sans-serif;
-  font-weight: medium;
   color: #3F84C5; }
   body .navbar-item, button .navbar-item, input .navbar-item, select .navbar-item, textarea .navbar-item {
-    font-family: "Lato", sans-serif; }
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    color: #4BBCCE; }
     body .navbar-item img, button .navbar-item img, input .navbar-item img, select .navbar-item img, textarea .navbar-item img {
       max-height: 3rem; }
   body p, button p, input p, select p, textarea p {
@@ -27,7 +37,7 @@ body, button, input, select, textarea {
   background-color: #3F84C5;
   background-size: cover; }
 
-header img {
+header #wind {
   width: 35%;
   margin: 0 auto;
   position: absolute;
@@ -42,5 +52,243 @@ header h1 {
   color: #fff;
   width: 500px; }
 
-.footer .column h {
-  max-width: 500px; }
+.aboutus .container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem; }
+
+.aboutus h4 {
+  margin: 0 auto;
+  max-width: 200px;
+  color: #4BBCCE; }
+  .aboutus h4 #right {
+    padding-right: 2rem; }
+
+.aboutus #column1 {
+  background-color: #4BBCCE;
+  width: 480px;
+  height: 272px;
+  padding-top: 2rem; }
+
+.aboutus #aboutus .content {
+  max-width: 400px;
+  margin: 0 auto; }
+  .aboutus #aboutus .content h2 {
+    padding-top: 1rem; }
+
+.aboutus #aboutus .column {
+  margin: 0 auto; }
+
+.aboutus #radistai {
+  padding-top: 2rem; }
+
+.vertical {
+  height: 7rem;
+  vertical-align: middle; }
+
+/*CLIENTS*/
+.info-field {
+  visibility: hidden;
+  opacity: 0; }
+
+#draggable:hover .info-field {
+  visibility: visible;
+  opacity: 1; }
+
+/*Projects*/
+.allprojects {
+  background-color: #F9FCFF;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  /*Project-right*/
+  /*Project-left*/ }
+  .allprojects .container {
+    padding: 3rem 0 3rem 0; }
+  .allprojects h5 {
+    padding-bottom: 10px;
+    margin-top: 125px;
+    border-bottom: 2.5px solid #3F84C5;
+    font-weight: normal; }
+  .allprojects img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: cover; }
+  .allprojects .button-wraper {
+    margin-top: 125px; }
+  .allprojects .column {
+    max-width: 350px; }
+  .allprojects #righttext {
+    margin-left: 50px;
+    font-weight: normal; }
+  .allprojects #rightpadding {
+    padding-right: 50px; }
+  .allprojects #lefttext {
+    margin-right: 50px; }
+  .allprojects #leftpadding {
+    padding-left: 50px; }
+
+/*button*/
+.button-wraper {
+  display: inline-block;
+  position: relative; }
+  .button-wraper .styled-button {
+    background: transparent;
+    border: 2.5px solid #3F84C5;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 10px 30px;
+    color: #4BBCCE;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+    transition: .5s ease; }
+  .button-wraper .styled-button:after {
+    content: '';
+    width: 95%;
+    height: 82%;
+    background: transparent;
+    border: 2.5px solid #3F84C5;
+    top: 20px;
+    left: 15px;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    transition: .5s ease; }
+  .button-wraper .styled-button:hover {
+    background: #fff;
+    color: #122A40; }
+  .button-wraper .styled-button:hover:after {
+    top: 0;
+    left: 0;
+    z-index: -1; }
+
+/*SERVICES*/
+.services .content {
+  padding-top: 2.6rem; }
+
+/*STATS*/
+.stats {
+  background-color: #F9FCFF;
+  margin: 5rem 0 5rem 0;
+  padding: 2rem 0 2rem 0; }
+
+/*TEAM*/
+.team .columns {
+  padding-top: 2.6rem; }
+  .team .columns p {
+    color: #5C7295;
+    font-size: 0.9rem; }
+  .team .columns .title {
+    text-transform: uppercase;
+    font-weight: 400; }
+
+.team .column h3, .team h4, .team p {
+  width: 300px; }
+
+.team #team {
+  padding: 2.6rem 0 2.6rem 0; }
+
+.team .container img {
+  border-radius: 3px;
+  object-fit: cover; }
+
+.team article {
+  margin-bottom: 30px; }
+
+.instaphotos .content {
+  margin-top: 2rem; }
+
+.instaphotos #photos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%; }
+  .instaphotos #photos img {
+    height: 256px;
+    margin: 25px 50px; }
+
+/* Footer */
+.footer {
+  background-color: #122A40; }
+  .footer h1 {
+    color: white;
+    border-bottom: 2.5px solid #fff;
+    padding-bottom: 10px; }
+  .footer .column h4 {
+    max-width: 500px; }
+  .footer .column a {
+    color: #3F84C5; }
+  .footer a:hover {
+    color: #fff; }
+  .footer #contacts {
+    padding-left: 2rem; }
+  .footer #colors {
+    color: white; }
+
+/*MOBILE*/
+@media screen and (max-width: 1407px) {
+  header #wind {
+    left: 60%;
+    top: 11rem; } }
+
+@media screen and (max-width: 1152px) {
+  header #title_main {
+    top: 7rem; }
+  header #wind {
+    left: 60%;
+    top: 9rem;
+    size: 35%; } }
+
+@media screen and (max-width: 768px) {
+  header #title_main {
+    top: 2rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    width: 400px; }
+  header #centerleft {
+    margin-left: 220px; }
+  header #particles-js {
+    height: 500px; }
+  header #wind {
+    width: 20%;
+    top: 8rem;
+    left: 40%; }
+  header .image img {
+    width: 50%; }
+  #rightpadding {
+    padding: 0; }
+  .services {
+    text-align: center; }
+  .aboutus {
+    text-align: center; }
+    .aboutus .vertical {
+      padding-right: 15%; }
+    .aboutus #column1 {
+      width: 100%;
+      height: 100%; }
+  .allprojects .column {
+    max-width: 100%;
+    text-align: center; }
+    .allprojects .column has-text-right {
+      text-align: center; }
+  .allprojects image {
+    width: 300px;
+    height: 300px;
+    margin-left: 50px; }
+  .allprojects #rightpadding {
+    padding: 0; }
+  .team {
+    padding: 0 15px;
+    margin-left: 2rem; }
+    .team .column h4, .team h3, .team p {
+      width: 100%; }
+    .team p {
+      font-size: 12px; }
+    .team .title, .team .subtitle {
+      font-size: 14.4px; } }
