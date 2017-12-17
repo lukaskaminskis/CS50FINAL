@@ -1,0 +1,22 @@
+// 1. Import the initial variables
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+$light-blue: #4BBCCE;
+$dark-blue: #3F84C5;
+$white: #fff;
+$family-serif: 'Fira Sans', sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $light-blue;
+$primary-invert: $white;
+// Use the new serif family
+$family-primary: $family-serif;
+
+// 5. Add new color variables to the color map.
+@import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
+$link: $dark-blue;
+
+// 6. Import the rest of Bulma
+@import "../../node_modules/bulma/bulma";
