@@ -54,12 +54,19 @@ body, button, input, select, textarea {
   background-size: cover;
 }
 header {
-   #wind, #spin{
-    width: 35%;
-    margin:0 auto;
-    position: absolute;
-    top: 11rem;
-    left: 50rem;
+   #wind{
+     width: 20%;
+     margin:0 auto;
+     position: absolute;
+     top: 15rem;
+     left: 57rem;
+   }
+   #spin{
+     width:35%;
+     margin:0 auto;
+     position: absolute;
+     top: 9rem;
+     left: 50rem;
   }
   h1 {
     position: absolute;
@@ -292,9 +299,15 @@ header {
 /*MOBILE*/
 @media screen and (max-width: 1407px)
 {
-  header #wind{
-  left: 60%;
-  top:11rem;
+  header {
+    #wind{
+    left: 60%;
+    top:14rem;
+    }
+    #spin {
+    left: 52%;
+    top:7rem;
+    }
   }
 }
 @media screen and (max-width: 1152px)
@@ -304,18 +317,23 @@ header {
       top:7rem;
     }
     #wind{
-    left: 60%;
-    top:9rem;
-    size:35%;
+    left: 70%;
+    top:9.5rem;
     }
+    #spin {
+    left: 62%;
+    top:6rem;
+    }
+
   }
   }
   @media screen and (max-width: 768px)
   {
     header{
       #title_main{
-        top:2rem;
-        left:1rem;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
         font-size: 1.5rem;
         width: auto;
 
@@ -323,13 +341,10 @@ header {
       #centerleft{
         margin-left: 220px;
       }
-      #particles-js{
-        height: 500px;
-      }
-      #wind{
-      width:20%;
+      #wind, #spin{
+      width:15%;
       top: 8rem;
-      left:40%;
+      left:43%;
       }
       .image img{
         width: 50%;

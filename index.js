@@ -20,12 +20,3 @@ var sass = require('node-sass');
 sass.render({
   file: "public/css/main.scss",
 });
-// var sass = require('node-sass');
-// sass.render({
-//   file: 'main.scss',
-// }, function(err, result) { /*...*/ });
-// // OR
-// var result = sass.renderSync({
-//   data: scss_content
-//   [, options..]
-// })

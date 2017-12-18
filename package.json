@@ -4,7 +4,7 @@
   "description": "Website for TSOLUTIONS",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss public/scss/main.scss   public/css/main.css",
+    "build-css": "node-sass --include-path scss public/scss/main.scss public/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "start": "node index.js",
     "test": "jest --coverage --forceExit"
